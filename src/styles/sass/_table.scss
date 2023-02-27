@@ -1,0 +1,228 @@
+//reports table custom color
+.reports-tab-wrapper {
+    background-color: var(--lightsectionBg) !important;
+    ul#reports-tab-head, ul#soc-reports-tab-head {
+        li {
+            color: var(--androGray) !important; //reports table header color
+            .dev-order-icon {
+                color: var(--androLight) !important; // reports table short icon up or down arrow
+            }
+            .dev-sort-icon {
+                color: var(--androGrayStyleOne) !important; //reports table short up and down arrow single icon
+            }
+        }
+    }
+}
+.reports-tab-scroll {
+    ul#reports-tab-body, ul#soc-reports-tab-body {
+        &:hover {
+            background-color: var(--androDarkHover) !important; //reports table row hover background color
+        }
+        li {
+            color: var(--androLight) !important; //reports table data color
+        }
+    }
+}
+
+//devices table custom color
+.devices-tab-wrapper {
+    background-color: var(--lightsectionBg) !important;
+    ul#devices-tab-head {
+        li {
+            color: var(--androGray) !important; //devices table header color
+            .dev-order-icon {
+                color: var(--androLight) !important; // devices table short icon up or down arrow
+            }
+            .dev-sort-icon {
+                color: var(--androGrayStyleOne) !important; //devices table short up and down arrow single icon
+            }
+            .rpt-order-icon {
+                color: var(--androLight) !important; //devices table settings page short icon up or down arrow
+            }
+            .rpt-sort-icon {
+                color: var(
+                    --androGrayStyleOne
+                ) !important; //devices table settings page  short up and down arrow single icon
+            }
+        }
+    }
+    //Style 1
+    ul#devices-tab-head1 {
+        li {
+            color: var(--androGray) !important; //devices table header color
+            .dev-order-icon {
+                color: var(--androLight) !important; // devices table short icon up or down arrow
+            }
+            .dev-sort-icon {
+                color: var(--androGrayStyleOne) !important; //devices table short up and down arrow single icon
+            }
+        }
+    }
+    //Style 2
+    ul#devices-tab-head2 {
+        li {
+            color: var(--androGray) !important; //devices table header color
+            .rpt-order-icon {
+                color: var(--androLight) !important; // devices table short icon up or down arrow
+            }
+            .rpt-sort-icon {
+                color: var(--androGrayStyleOne) !important; //devices table short up and down arrow single icon
+            }
+        }
+    }
+    //Style 2
+    ul#devices-tab-head3 {
+        li {
+            color: var(--androGray) !important; //devices table header color
+            .rpt-order-icon {
+                color: var(--androLight) !important; // devices table short icon up or down arrow
+            }
+            .rpt-sort-icon {
+                color: var(--androGrayStyleOne) !important; //devices table short up and down arrow single icon
+            }
+        }
+    }
+}
+.devices-tab-scroll {
+    ul#devices-tab-body {
+        &:hover {
+            background-color: var(--androDarkHover) !important; //devices table row hover background color
+        }
+        li {
+            color: var(--androLight); //devices table data color
+        }
+    }
+}
+//Style one
+.devices-tab-scroll1 {
+    ul#devices-tab-body {
+        &:hover {
+            background-color: var(--androDarkHover) !important; //devices table row hover background color
+        }
+        li {
+            color: var(--androLight) !important; //devices table data color
+        }
+    }
+}
+//Style two
+.devices-tab-scroll2 {
+    ul#devices-tab-body {
+        &:hover {
+            background-color: var(--androDarkHover) !important; //devices table row hover background color
+        }
+        li {
+            color: var(--androLight) !important; //devices table data color
+        }
+    }
+}
+
+//assets table custom color
+.assets-tab-wrapper {
+    background-color: var(--lightsectionBg) !important;
+    ul#assets-tab-head {
+        li {
+            color: var(--androGray) !important; //assets table header color
+            .rpt-order-icon {
+                color: var(--androLight) !important; //assets table short icon up or down arrow
+            }
+            .rpt-sort-icon {
+                color: var(--androGrayStyleOne) !important; //assets table short up and down arrow single icon
+            }
+        }
+    }
+}
+.assets-tab-scroll {
+    ul#assets-tab-body {
+        &:hover {
+            background-color: var(--androDarkHover) !important; //assets table row hover background color
+        }
+        li {
+            color: var(--androLight) !important; //assets table data color
+        }
+    }
+}
+
+//threats table custom color
+.threats-tab-wrapper {
+    background-color: var(--lightsectionBg) !important;
+    ul#threats-tab-head {
+        li {
+            color: var(--androGray) !important; //threats table header color
+            .rpt-order-icon {
+                color: var(--androLight) !important; //threats table short icon up or down arrow
+            }
+            .rpt-sort-icon {
+                color: var(--androGrayStyleOne) !important; //threats table short up and down arrow single icon
+            }
+        }
+    }
+}
+.threats-tab-scroll {
+    ul#threats-tab-body {
+        &:hover {
+            background-color: var(--androDarkHover) !important; //threats table row hover background color
+        }
+        li {
+            color: var(--androLight) !important; //threats table data color
+        }
+    }
+}
+
+// Ktable custom styles
+.ktable {
+    th {
+        color: var(--androGray) !important; //ktable header color
+        p-sorticon {
+            .ui-sortable-column-icon.pi-sort-up,
+            .ui-sortable-column-icon.pi-sort-down {
+                color: var(--androLight) !important;
+            }
+            .ui-sortable-column-icon.pi-sort {
+                color: var(--androGrayStyleOne) !important;
+            }
+        }
+    }
+    td {
+        color: var(--androLight) !important; //ktable data color
+    }
+    tr {
+        &:hover {
+            background-color: var(--androDarkHover) !important; //ktable row hover background color
+        }
+    }
+}
+// endpoint custom table
+::ng-deep {
+    .ep-table {
+        .ui-table-thead {
+            tr {
+                border-bottom: 2px solid !important;
+border-color: var(--borderColor) !important;
+                th {
+                    background-color: var(--lightTableBg) !important;
+                    color: var(--androGray) !important;
+                }
+            }
+        }
+    }
+    .ep-table.ui-table-scrollable-body-table {
+        tbody {
+            tr {
+                border-bottom: 0px solid !important;
+                &:hover {
+                    background-color: var(--androDarkHover) !important;
+                }
+                &:nth-child(odd) {
+                    background-color: var(--lightTableEvenRecord);
+                }
+                td {
+                    background-color: transparent !important;
+                    color: var(--androLight) !important;
+                }
+            }
+        }
+    }
+    body .ui-table .ui-sortable-column .ui-sortable-column-icon {
+        color: var(--androGrayStyleOne) !important;
+    }
+}

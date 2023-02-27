@@ -1,0 +1,1698 @@
+@import "./sass/typography";
+
+.sfilter-body-left-body {
+  input[type="checkbox"] {
+    top: 2px !important;
+  }
+}
+
+.ui-dialog-content {
+  input[type="checkbox"] {
+    top: 5px !important;
+  }
+}
+
+.td-icon1 {
+  input[type="checkbox"] {
+    top: 0px !important;
+  }
+}
+
+.nav-splitbutton.ui-splitbutton .ui-menu .ui-menuitem-link {
+  margin: 0 !important;
+
+  &:hover {
+    .ui-menuitem-text {
+      color: var(--androLight) !important;
+    }
+  }
+}
+
+//Darktheme and lighttheme header logo style start =========================
+// .dark-theme {
+//     .ep-header {
+//         .ep-header-logo {
+//             background-image: url(/assets/img/logo-andromeda-by-akitra.png);
+//             background-position: center;
+//             background-size: 179px;
+//             background-repeat: no-repeat;
+//             img {
+//                 visibility: visible;
+//             }
+//         }
+//     }
+// }
+// .light-theme {
+//     .ep-header {
+//         .ep-header-logo {
+//             background-image: url(/assets/img/dark-logo-andromeda-by-akitra.png);
+//             background-position: center;
+//             background-size: 179px;
+//             background-repeat: no-repeat;
+//             img {
+//                 visibility: visible;
+//             }
+//         }
+//     }
+// }
+
+//Darktheme and lighttheme header logo style end =========================
+
+//Chart-Js Tooltip style =================================================
+
+#chartjs-tooltip,
+#chartjs-tooltip2,
+#chartjs-tooltip3 {
+  position: fixed;
+  pointer-events: none;
+  background: var(--chartJsTooltip);
+  word-break: break-word;
+  white-space: normal;
+  max-width: 400px;
+  border-radius: 4px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  color: var(--selectorColortwo);
+  z-index: 2;
+  box-shadow: 0 5px 15px 0 var(--tooltipText);
+}
+
+.line_chart_height {
+  height: 27px;
+}
+
+.line_chart_style {
+  border-radius: 1px;
+  margin-right: 1.5px;
+}
+
+//Horizontal bar ========================================================
+#colorBar {
+  width: 100%;
+  height: 6px;
+  border-style: solid;
+  border-color: var(--lightColor);
+  background-color: var(--lightColor);
+}
+
+//Chart-Js Tooltip style End ==========================================
+
+.text-overflow-fix {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.avoid-clicks {
+  pointer-events: none !important;
+}
+
+// chart-value-styles
+.chart-value-styles {
+  width: 90%;
+  white-space: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Common Header Styles (Report Wrapper)
+
+.ai3-reports,
+.ai3-reports-view {
+  padding: 20px 20px;
+}
+
+.report-wrapper {
+  padding: 20px;
+  background: var(--lightsectionBg);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.report-wrapper1 {
+  background: var(--lightsectionBg);
+  overflow: hidden;
+}
+
+.report-header h5 {
+  font-size: 18px;
+  white-space: normal;
+}
+
+.breadcrumb-divider {
+  margin: 0px 10px;
+  color: var(--lightGray);
+}
+
+.breadcrumb-link {
+  font-weight: 600;
+  font-size: 16px;
+  user-select: none;
+  color: var(--lightGrayStyletwo);
+  word-break: break-word;
+  white-space: normal;
+}
+
+.breadcrumb-link-last {
+  user-select: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--lightColor);
+}
+
+.m-cust {
+  margin: 0px -10px !important;
+}
+
+.p-cust {
+  padding: 0px 10px !important;
+}
+
+.mt-1-cust {
+  margin-top: 10px;
+}
+
+.state-head {
+  // color: var(--lightGrayStyleTwo);
+  color: var(--androLabel);
+  font-size: $font-size-14;
+  font-weight: 500;
+  padding-bottom: 3px;
+}
+
+.state-head-new {
+  color: var(--androLabel);
+  font-weight: 600;
+}
+
+.state-bar-parent {
+  height: 100%;
+  width: 100%;
+  background: var(--androChartempty);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+}
+
+.state-bar-child {
+  height: 100%;
+  display: flex;
+}
+
+.state-parent-head {
+  font-size: 18px;
+  white-space: normal;
+  font-weight: 600;
+}
+
+.state-value {
+  color: var(--androValue);
+  font-size: $font-size-14;
+  font-weight: bold;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+//Tag Wrapper
+
+.tags-wrapper {
+  border: 1px solid;
+  border-color: var(--tagWrapper);
+  max-height: 150px;
+  min-height: 80px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+//AI3 Tag styles
+
+.ai3-no-tag {
+  color: var(--lightGray);
+  height: 20px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.ai3-tag {
+  background: var(--tagBg);
+  height: 35px;
+  color: var(--lightColor) !important;
+  margin: 5px;
+  border-radius: 4px;
+  padding: 5px 8px;
+  display: flex;
+}
+
+.tag-fas i {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 0px 0px 5px;
+}
+
+.tag-edit-holder {
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.ui-inputtext.ng-dirty.ng-invalid {
+  border: 0px !important;
+  border-bottom: 1px solid !important;
+  border-color: var(--error) !important;
+}
+
+//Title settings
+
+.title_setting {
+  font-size: 16px !important;
+  color: var(--lightColor);
+  margin-bottom: 20px;
+  font-weight: 500 !important;
+}
+
+// Error Message UI
+
+.errormsg,
+.errormsg1 {
+  font-size: 14px !important;
+  color: var(--error);
+  padding: 0.3rem 0rem;
+  display: block;
+  text-align: left;
+  text-transform: initial;
+  line-height: 1.4em;
+  white-space: normal;
+}
+
+// rcorner
+
+.rcorner {
+  border-radius: 25px;
+  background: var(--lightYellow);
+  padding: 2px;
+  color: var(--defaultDark);
+  font-weight: bold;
+  text-align: center;
+  margin-left: 15px !important;
+  cursor: auto;
+}
+
+// matitory_start
+
+.matitory_start {
+  color: var(--matitoryStart);
+  position: relative;
+  display: inline-block;
+  padding: 0 0.3em;
+}
+
+// .ai3-tab-head
+
+.ai3-tab-head {
+  font-size: 16px;
+  margin: 10px 40px 0px 0px;
+  color: var(--tabHead);
+  height: 30px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.ai3-tab-head.active {
+  color: var(--lightColor);
+  font-weight: 500;
+  border-bottom: 2px solid;
+  border-color: var(--lightColor);
+}
+
+.ai3-tab-head:hover {
+  color: var(--lightColor);
+}
+
+// Basic Search Custom UI
+
+.basic-search-input {
+  height: 36px;
+  width: 100%;
+  // border: 0px;
+  padding: 10px 40px 10px 10px;
+  border-radius: 4px !important;
+  font-size: 16px;
+}
+
+.basic-search-clear {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: -30px;
+  top: 8px;
+  color: var(--borderColor);
+  margin: 0px;
+}
+
+.basic-search-clear i {
+  cursor: pointer;
+}
+
+.basic-search-clear:hover {
+  color: var(--lightBlack);
+}
+
+// Table sort icon - custom style
+.rpt-sort-icon {
+  color: var(--shortIcon);
+  padding-left: 5px !important;
+  position: relative !important;
+  top: 2px !important;
+  cursor: pointer;
+  user-select: none;
+}
+
+.rpt-order-icon {
+  color: var(--lightColor) !important;
+  padding-left: 5px !important;
+  position: relative !important;
+  top: 2px !important;
+  cursor: pointer;
+  user-select: none;
+}
+
+// Shield new common content wraper styles(Main div)
+.overlay-rem-popup {
+  width: 100%;
+  height: 100%;
+  // position: absolute;
+  // left: 0px;
+  // top: 0px;
+  // right: 0px;
+  // bottom: 0px;
+  z-index: 1;
+}
+
+// Title fontsize
+.main-title {
+  font-size: 18px !important;
+}
+
+// vertical and harizontal menu icon
+.more-info {
+  font-size: 20px !important;
+  padding: 5px;
+}
+
+//Default page min-height common style
+.andromeda-min-height {
+  min-height: calc(100vh - 117px) !important;
+}
+
+.padding-15 {
+  padding: 15px;
+}
+
+//================================================================
+//               Updated Common Styles and Fontsize
+//================================================================
+
+.andromeda-main-title {
+  font-size: $font-size-16;
+  font-weight: $font-weight-bold;
+  margin-bottom: 10px;
+}
+
+.padding-0 {
+  padding: 0 !important;
+}
+
+//Table font size changes
+
+ul#devices-tab-head,
+ul#devices-tab-head1,
+ul#devices-tab-head2,
+ul#reports-tab-head,
+ul#reports-tab-head1,
+ul#assets-tab-head {
+  z-index: auto !important;
+
+  li {
+    font-size: $font-size-14;
+  }
+}
+
+ul#devices-tab-body li,
+ul#reports-tab-body li {
+  font-size: $font-size-14;
+}
+
+.andromeda-table-icon {
+  font-size: $font-size-18 !important;
+  color: var(--selectorColor);
+  cursor: pointer !important;
+}
+
+.andromeda-table-link {
+  font-size: $font-size-14;
+  word-break: break-word;
+  white-space: normal;
+  text-decoration: underline !important;
+  cursor: pointer;
+  color: var(--selectorColorOne) !important;
+}
+
+//================================================================
+//               Button Common Styles and Fontsize
+//================================================================
+
+.andromeda-btn {
+  font-size: $font-size-14;
+  text-transform: capitalize;
+  border-radius: 4px;
+  border: 0px;
+  padding: 5px 15px;
+  font-weight: 600;
+  min-height: 40px;
+  min-width: 80px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:disabled {
+    opacity: 1;
+    cursor: not-allowed;
+  }
+}
+
+.rounded-corner {
+  border-radius: 50px;
+}
+
+.filled-blue {
+  @extend .andromeda-btn;
+  color: var(--lightWhite);
+  background: var(--andromedaBlueCTA);
+  &:hover {
+    background: var(--andromedaHover);
+  }
+  &:disabled,
+  &.disabled {
+    background-color: var(--andromedaDisabled) !important;
+  }
+}
+
+.filled-gray {
+  @extend .andromeda-btn;
+  color: var(--lightWhite);
+  background: var(--andromeda-gray);
+}
+
+.filled-gray-cursor {
+  @extend .andromeda-btn;
+  color: var(--lightWhite);
+  background: var(--andromeda-gray);
+  cursor: not-allowed;
+}
+
+.link-button {
+  @extend .andromeda-btn;
+  color: var(--andromedaWhiteText);
+  background: transparent;
+}
+
+.clear-search-filter {
+  color: var(--andromedaWhiteText);
+  background: transparent;
+  border: none;
+  display: inherit;
+  height: 36px;
+  padding: 12px;
+  margin-left: 5px;
+}
+.filled-light-gray {
+  color: var(--andromedaWhiteText);
+  background-color: var(--andromedaState);
+  width: 133px;
+  height: 26px;
+  border-radius: 4px;
+  border: none;
+}
+
+//================================================================
+//               Float Common Styles and Fontsize
+//================================================================
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+::ng-deep {
+  .andromeda-ngx-loader {
+    .backdrop,
+    .spinner-three-bounce {
+      position: fixed !important;
+    }
+  }
+}
+
+//================================================================
+//               Settings layout Common container
+//================================================================
+
+.offset-grid-container {
+  width: 429px;
+  padding: 5px 10px;
+}
+
+//================================================================
+//               Form Group Common Styles and Fontsize
+//================================================================
+
+.custom-form-group {
+  margin-bottom: 20px;
+
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+
+    sup {
+      color: var(--error);
+      font-size: 18px;
+      top: 0;
+    }
+  }
+
+  .custom-input-group {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+
+    input,
+    textarea {
+      width: 100%;
+      border-radius: 4px;
+      padding: 10px 15px;
+      border: none !important;
+      color: var(--andromedaWhiteText) !important;
+      background-color: var(--andromedaGrayForm) !important;
+
+      &::placeholder {
+        color: var(--andromedaWhiteText) !important;
+      }
+    }
+
+    input {
+      min-height: 40px;
+    }
+
+    .input-addon {
+      position: absolute;
+      top: 13px;
+      right: 15px;
+      color: var(--andromedaWhiteText);
+      cursor: pointer;
+    }
+
+    &.common-search-group {
+      position: relative;
+      width: 409px;
+
+      input {
+        border-radius: 8px !important;
+      }
+
+      button {
+        position: absolute;
+        top: 0;
+        right: -30px;
+        width: 103px;
+
+        &:hover {
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+}
+
+.custom-form-group-value {
+  margin-bottom: 20px;
+  label {
+    font-size: 14px;
+    font-weight: normal;
+    padding-bottom: 5px;
+    width: 100%;
+    display: block;
+  }
+  div {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.selected-tag {
+  margin: 10px 10px 0 0;
+  background: var(--andromedaTableBg);
+  border-radius: 4px;
+  opacity: 1;
+  letter-spacing: 0px;
+  width: fit-content;
+  padding: 3px 10px;
+  float: left;
+  color: var(--andromedaBlackText);
+
+  i.pi {
+    padding-left: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+    color: var(--andromedaBlackText) !important;
+  }
+}
+
+// ::ng-deep {
+//     .selected-tag i.pi {
+//         color: var(--andromedaBlackText) !important;
+//     }
+// }
+//================================================================
+//              Error Message
+//================================================================
+.error-message {
+  font-size: 14px;
+  color: var(--error);
+}
+
+//================================================================
+//              Primeng Table
+//================================================================
+.responsive-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.primeng-table {
+  thead {
+    border-radius: 4px !important;
+
+    th {
+      background-color: var(--andromedaSoftState) !important;
+      border: none !important;
+      text-align: left !important;
+      padding: 10px !important;
+      color: var(--andromedaBlack) !important;
+
+      p-sorticon {
+        i {
+          color: var(--andromedaSort) !important;
+        }
+      }
+    }
+  }
+
+  tbody tr {
+    border-top: 3px solid;
+    border-color: var(--andromedaPageBg);
+    background-color: var(--andromedaBlack) !important;
+
+    &:hover {
+      background-color: var(--andromedaDarkState) !important;
+    }
+
+    &.no-actions {
+      &:hover .primeng-table-actions {
+        display: none !important;
+      }
+    }
+
+    &:hover .primeng-table-actions {
+      @media only screen and (max-width: 1024px) {
+        display: none !important;
+      }
+
+      display: flex !important;
+      height: 100%;
+      background-color: var(--andromedaDarkState) !important;
+    }
+
+    &.active-row {
+      background-color: var(--andromedaDarkState) !important;
+
+      @media only screen and (min-width: 1024px) {
+        background-color: var(--andromedaBlack) !important;
+      }
+
+      .actions {
+        .primeng-table-actions {
+          @media only screen and (max-width: 1024px) {
+            display: flex !important;
+            height: 100%;
+          }
+
+          @media only screen and (min-width: 1024px) {
+            display: none;
+          }
+        }
+      }
+
+      &:hover {
+        background-color: var(--andromedaDarkState) !important;
+      }
+    }
+
+    td {
+      padding: 10px !important;
+      min-height: 50px;
+      color: var(--andromedaWhiteText);
+      vertical-align: top;
+    }
+  }
+
+  .ui-sortable-column.ui-state-highlight {
+    color: var(--andromedaBlack) !important;
+  }
+
+  tr th {
+    &:first-child {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+
+  tr td {
+    &:first-child {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
+
+  th {
+    &.actions {
+      width: 50px;
+    }
+  }
+
+  td {
+    &.actions {
+      width: 50px;
+      position: relative;
+
+      .primeng-table-actions {
+        position: absolute;
+        right: 0;
+        top: 0;
+        line-height: 35px;
+        height: 40px;
+        padding: 0 5px;
+        background-color: var(--andromedaDarkState);
+        display: none;
+
+        a {
+          padding: 0 5px;
+          margin: 2px;
+          cursor: pointer;
+
+          img {
+            width: 15px;
+          }
+
+          i {
+            font-size: 18px;
+          }
+        }
+
+        .andromeda-custom-menu {
+          a {
+            margin: 0 !important;
+          }
+        }
+      }
+
+      .primeng-table-res-action {
+        display: none;
+
+        @media only screen and (max-width: 1024px) {
+          display: block;
+          position: absolute;
+          right: 20px;
+          top: 0;
+          line-height: 19px;
+          height: 40px;
+          padding: 10px;
+        }
+
+        a {
+          cursor: pointer;
+          padding: 10px;
+        }
+
+        &.display-none {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .expanded-row {
+    &.br-none {
+      td {
+        &:first-child {
+          border-bottom-left-radius: 0;
+        }
+
+        &:last-child {
+          border-bottom-right-radius: 0;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: var(--andromedaBlack) !important;
+    }
+  }
+
+  .br-t-0 {
+    border-top: 0 !important;
+
+    td {
+      &:first-child {
+        border-top-left-radius: 0;
+      }
+
+      &:last-child {
+        border-top-right-radius: 0;
+      }
+    }
+  }
+
+  //================================================================
+  //              Primeng Table Pagination
+  //================================================================
+
+  .ui-paginator {
+    width: 100%;
+    display: block;
+    float: right;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    text-align: right;
+
+    .ui-corner-all {
+      border-radius: 50% !important;
+    }
+
+    .ui-paginator-left-content {
+      padding-top: 5px;
+    }
+  }
+
+  &.nested-table {
+    thead {
+      tr {
+        border-top: 0 !important;
+
+        th {
+          background-color: var(--andromedaSoftState) !important;
+        }
+      }
+    }
+
+    tbody tr {
+      border-top: 3px solid;
+      border-color: var(--andromedaBlack) !important;
+      background-color: var(--andromedaPageBg) !important;
+
+      &:hover {
+        background-color: var(--andromedaDarkState) !important;
+      }
+
+      &:hover .primeng-table-actions {
+        @media only screen and (max-width: 1024px) {
+          display: none;
+        }
+
+        display: flex;
+        height: 100%;
+        background-color: var(--andromedaDarkState) !important;
+      }
+
+      &.active-row {
+        .actions {
+          .primeng-table-actions {
+            @media only screen and (max-width: 1024px) {
+              display: flex !important;
+              height: 100%;
+              background-color: var(--andromedaDarkState) !important;
+            }
+
+            @media only screen and (min-width: 1024px) {
+              display: none;
+            }
+          }
+        }
+      }
+
+      td {
+        padding: 10px !important;
+        min-height: 50px;
+        color: var(--andromedaWhiteText);
+      }
+    }
+  }
+}
+
+//================================================================
+//              Primeng Custom Dropdown Style
+//================================================================
+
+// ::ng-deep {
+
+.andromeda-custom-dropdown {
+  background: var(--andromedaGrayForm) !important;
+  border-color: var(--andromedaGrayForm) !important;
+  width: 137px !important;
+  margin-right: 10px !important;
+  .ui-inputtext {
+    background-color: inherit !important;
+    border-color: inherit !important;
+    color: var(--andromedaWhiteText) !important;
+    padding: 8px 15px;
+  }
+  .ui-dropdown-label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .ui-multiselect-label {
+    color: var(--andromedaWhiteText) !important;
+    min-height: 40px;
+    line-height: 2;
+    padding: 6px 30px 6px 15px !important;
+  }
+  .ui-multiselect-filter-container {
+    width: 80% !important;
+    .ui-inputtext.ui-state-default {
+      color: var(--andromedaBlackText) !important;
+      background-color: var(--andromedaDropdownHover) !important;
+    }
+  }
+  .ui-multiselect-filter-icon.pi.pi-search {
+    color: var(--andromedaBlackText) !important;
+  }
+  .ui-multiselect-close {
+    span.pi.pi-times {
+      color: var(--andromedaBlackText) !important;
+    }
+  }
+  .ui-multiselect-trigger.ui-state-default {
+    background-color: transparent !important;
+  }
+  .ui-dropdown-panel,
+  .ui-multiselect-panel {
+    background: var(--andromedaDropdownPanel) !important;
+    border-color: var(--andromedaDropdownPanel) !important;
+    color: var(--andromedaPageBg) !important;
+    font-weight: 500;
+    border: 0;
+    width: 200px;
+  }
+  .ui-multiselect-panel {
+    padding: 0 !important;
+    width: 200px;
+  }
+  .ui-dropdown-items-wrapper,
+  .ui-multiselect-items-wrapper {
+    // width: 180px;
+    top: 0 !important;
+    background-color: inherit !important;
+  }
+  .pi-caret-down {
+    color: var(--andromedaWhiteText) !important;
+    left: 40% !important;
+  }
+  .ui-dropdown-item,
+  .ui-multiselect-item {
+    padding: 10px !important;
+    color: var(--andromedaBlackText) !important;
+  }
+  &.ui-dropdown-open {
+    .ui-dropdown-label.ui-inputtext {
+      background: var(--andromedaDropdownPanel) !important;
+      border-color: var(--andromedaDropdownPanel) !important;
+      color: var(--andromedaBlackText) !important;
+    }
+    span.ui-dropdown-trigger-icon {
+      color: var(--andromedaBlackText) !important;
+    }
+  }
+  &.ui-multiselect-open {
+    background: var(--andromedaDropdownPanel) !important;
+    border-color: var(--andromedaDropdownPanel) !important;
+    color: var(--andromedaBlackText) !important;
+
+    span.ui-multiselect-trigger-icon {
+      color: var(--andromedaBlackText) !important;
+    }
+    .ui-multiselect-label {
+      color: var(--andromedaBlackText) !important;
+    }
+  }
+  .ui-dropdown-items .ui-dropdown-item,
+  .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item-group {
+    background-color: var(--andromedaDropdownPanel) !important;
+  }
+
+  .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item.ui-state-highlight,
+  .ui-dropdown-panel
+    .ui-dropdown-items
+    .ui-dropdown-item-group.ui-state-highlight,
+  .ui-dropdown-panel
+    .ui-dropdown-items
+    .ui-dropdown-item:not(.ui-state-highlight):not(.ui-state-disabled):hover,
+  .ui-dropdown-panel
+    .ui-dropdown-items
+    .ui-dropdown-item-group:not(.ui-state-highlight):not(
+      .ui-state-disabled
+    ):hover,
+  .ui-multiselect-panel
+    .ui-multiselect-items
+    .ui-multiselect-item:not(.ui-state-highlight):not(
+      .ui-state-disabled
+    ):hover {
+    background-color: var(--andromedaDropdownHover) !important;
+    color: var(--andromedaBlackText) !important;
+  }
+  .ui-multiselect-panel
+    .ui-multiselect-items
+    .ui-multiselect-item.ui-state-highlight {
+    background-color: var(--andromedaDropdownHover) !important;
+    color: var(--andromedaBlackText) !important;
+  }
+  .ui-multiselect {
+    width: auto !important;
+  }
+  &.ui-multiselect {
+    width: auto !important;
+  }
+}
+.andromeda-custom-menu {
+  background: var(--andromedaDropdownPanel) !important;
+
+  .ui-menuitem {
+    .ui-menuitem-link {
+      border-radius: 5px !important;
+      text-align: right;
+      padding-right: 20px;
+      padding-left: 20px;
+      &:hover {
+        background-color: var(--andromedaDropdownHover) !important;
+      }
+      .ui-menuitem-text {
+        color: var(--andromedaBlackText) !important;
+        padding: 0;
+      }
+    }
+
+    &.text-danger {
+      .ui-menuitem-text {
+        color: var(--grpRed) !important;
+      }
+    }
+  }
+
+  &.width-170 {
+    width: 170px !important;
+  }
+
+  &.width-130 {
+    width: 130px !important;
+  }
+}
+
+// Success status dropdown
+.andromeda-custom-dropdown.bg-success {
+  .ui-dropdown-label.ui-inputtext {
+    background: var(--grpGreen) !important;
+    border-color: var(--grpGreen) !important;
+    color: var(--andromedaWhiteText) !important;
+    font-weight: 500;
+    border: 0;
+  }
+
+  .pi-caret-down {
+    color: var(--andromedaWhiteText) !important;
+  }
+
+  &.ui-dropdown-open {
+    .ui-dropdown-label.ui-inputtext {
+      background: var(--andromedaDropdownPanel) !important;
+      border-color: var(--andromedaDropdownPanel) !important;
+      color: var(--andromedaBlackText) !important;
+    }
+
+    span.ui-dropdown-trigger-icon {
+      color: var(--andromedaBlackText) !important;
+    }
+  }
+}
+
+// error status dropdown
+.andromeda-custom-dropdown.bg-danger {
+  .ui-dropdown-label.ui-inputtext {
+    background: var(--grpRed) !important;
+    border-color: var(--grpRed) !important;
+    color: var(--andromedaWhiteText) !important;
+    font-weight: 500;
+    border: 0;
+  }
+
+  .pi-caret-down {
+    color: var(--andromedaWhiteText) !important;
+  }
+
+  &.ui-dropdown-open {
+    .ui-dropdown-label.ui-inputtext {
+      background: var(--andromedaDropdownPanel) !important;
+      border-color: var(--andromedaDropdownPanel) !important;
+      color: var(--andromedaBlackText) !important;
+    }
+
+    span.ui-dropdown-trigger-icon {
+      color: var(--andromedaBlackText) !important;
+    }
+  }
+}
+
+//================================================================
+//              Primeng Custom inputswitch Style
+//================================================================
+
+.andromeda-custom-inputswitch {
+  .ui-inputswitch {
+    width: 24px;
+    height: 16px;
+  }
+  .ui-inputswitch .ui-inputswitch-slider:before {
+    height: 0.8em;
+    width: 0.8em;
+    left: 0.2em;
+    top: 2.2px;
+  }
+  .ui-inputswitch.ui-inputswitch-checked .ui-inputswitch-slider:before {
+    transform: translateX(0.5em);
+  }
+}
+
+//================================================================
+//              Custom Date Filter Style
+//================================================================
+
+.select-custom-date {
+  display: flex;
+
+  .sub-title {
+    font-weight: bold;
+    width: fit-content !important;
+    padding: 10px 5px 0 0;
+    float: left;
+  }
+
+  .custom-options {
+    padding-left: 0;
+
+    li {
+      list-style: none;
+      padding: 8px 5px;
+      min-width: 65px;
+      background-color: #edeff2;
+      float: left;
+      margin-right: 5px;
+      color: #000000;
+      text-align: center;
+      border-radius: 4px;
+      height: 36px;
+      cursor: pointer;
+
+      &.active {
+        background-color: #76879a;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+//================================================================
+//              Smaller Label
+//================================================================
+
+.small-text {
+  font-size: 14px;
+  letter-spacing: 0px;
+  font-weight: normal;
+  padding-left: 13px;
+}
+
+//================================================================
+//   LightBackground Color (EX: Criteria and Controls card BG )
+//================================================================
+.card-light-bg {
+  background-color: var(--andromedaBlack) !important;
+}
+
+.criteria-series {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    padding: 12px 20px;
+
+    div {
+      &:nth-child(2) {
+        font-weight: bold;
+      }
+    }
+
+    &.active {
+      background-color: var(--andromedaHoverState);
+    }
+
+    &.list-disabled {
+      opacity: 0.5;
+      user-select: none;
+    }
+  }
+}
+
+//================================================================
+//   Disabled style
+//================================================================
+
+.disabled-style {
+  opacity: 0.7;
+  user-select: none;
+}
+
+//================================================================
+//   chips button style
+//================================================================
+.chips-button {
+  span {
+    color: var(--andromedaWhiteText);
+    background-color: var(--andromedaState);
+    padding: 2px 5px;
+    border-radius: 3px;
+    width: fit-content;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    float: left;
+
+    &.gdpr {
+      background-color: var(--grpPurple);
+    }
+
+    &.hippa {
+      background-color: var(--andromedaState);
+    }
+
+    &.ibr {
+      background-color: var(--grpCyan);
+    }
+
+    &.iec {
+      background-color: var(--grpGreen1);
+    }
+
+    &.iec {
+      background-color: var(--grpOrange);
+    }
+
+    &.nist {
+      background-color: var(--grpRedPurple);
+    }
+
+    &.pcidss {
+      background-color: var(--grpGreen);
+    }
+
+    &.soc1 {
+      background-color: var(--grpOrange1);
+    }
+
+    &.soc2 {
+      background-color: var(--grpCyan1);
+    }
+  }
+}
+
+//================================================================
+//   chips button style
+//================================================================
+.custom-input-switch {
+  .ui-inputswitch {
+    width: 2.3em;
+    height: 1.3em;
+
+    .ui-inputswitch-slider:before {
+      height: 1em;
+      width: 1em;
+      top: 0.15em;
+    }
+
+    &.ui-inputswitch-checked {
+      .ui-inputswitch-slider:before {
+        left: -0.2em;
+      }
+    }
+  }
+}
+
+//================================================================
+//   Custom Pop-up style
+//================================================================
+.andromeda-custom-dialog.ui-dialog {
+  .ui-dialog-content {
+    padding: 0;
+    color: inherit;
+    background-color: var(--andromedaPageBg) !important;
+  }
+}
+
+//================================================================
+//   Card style
+//================================================================
+
+.andromeda-card {
+  padding: 15px;
+  margin-top: 5px;
+  border-radius: 8px;
+  background: var(--andromedaPageBg);
+
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+
+    span.more-options {
+      float: right;
+
+      i {
+        font-size: 20px !important;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .sub-title {
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+//================================================================
+//  Editable sidebar Card style
+//================================================================
+
+.andromeda-custom-sidebar.ui-sidebar {
+  background-color: var(--andromedaPageBgReversed) !important;
+  border-color: var(--andromedaPageBgReversed) !important;
+  color: inherit !important;
+  width: 355px !important;
+  display: none;
+
+  .ui-sidebar-close {
+    .pi {
+      color: var(--andromedaBlackText) !important;
+      cursor: pointer;
+    }
+  }
+
+  .andromeda-custom-dropdown.ui-state-default {
+    width: 100% !important;
+  }
+  &.ui-sidebar-active {
+    display: block;
+  }
+}
+
+.andromeda-card.reversed-theme {
+  background: var(--andromedaPageBgReversed) !important;
+  color: var(--andromedaBlackText) !important;
+
+  .custom-input-group {
+    input,
+    textarea {
+      color: var(--andromedaWhiteTextReversed) !important;
+      background-color: var(--andromedaGrayFormReversed) !important;
+    }
+  }
+
+  .andromeda-custom-dropdown {
+    background: var(--andromedaGrayFormReversed) !important;
+    border-color: var(--andromedaGrayFormReversed) !important;
+
+    .ui-inputtext {
+      background-color: inherit !important;
+      border-color: inherit !important;
+      color: var(--andromedaWhiteTextReversed) !important;
+    }
+
+    .ui-dropdown-panel {
+      background: var(--andromedaDropdownPanelReversed) !important;
+      border-color: var(--andromedaDropdownPanelReversed) !important;
+      color: var(--andromedaPageBgReversed) !important;
+    }
+
+    .ui-dropdown-items-wrapper {
+      background-color: inherit !important;
+    }
+
+    .pi-caret-down {
+      color: var(--andromedaWhiteTextReversed) !important;
+    }
+
+    .ui-dropdown-item {
+      color: var(--andromedaBlackTextReversed) !important;
+    }
+
+    &.ui-dropdown-open {
+      .ui-dropdown-label.ui-inputtext {
+        background: var(--andromedaDropdownPanelReversed) !important;
+        border-color: var(--andromedaDropdownPanelReversed) !important;
+        color: var(--andromedaBlackTextReversed) !important;
+      }
+
+      span.ui-dropdown-trigger-icon {
+        color: var(--andromedaBlackTextReversed) !important;
+      }
+    }
+
+    .ui-dropdown-items .ui-dropdown-item,
+    .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item-group {
+      background-color: var(--andromedaDropdownPanelReversed) !important;
+    }
+
+    .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item.ui-state-highlight,
+    .ui-dropdown-panel
+      .ui-dropdown-items
+      .ui-dropdown-item-group.ui-state-highlight,
+    .ui-dropdown-panel
+      .ui-dropdown-items
+      .ui-dropdown-item:not(.ui-state-highlight):not(.ui-state-disabled):hover,
+    .ui-dropdown-panel
+      .ui-dropdown-items
+      .ui-dropdown-item-group:not(.ui-state-highlight):not(
+        .ui-state-disabled
+      ):hover {
+      background-color: var(--andromedaDropdownHoverReversed) !important;
+      color: var(--andromedaBlackTextReversed) !important;
+    }
+  }
+
+  .link-button {
+    color: var(--andromedaWhiteTextReversed) !important;
+  }
+}
+
+//================================================================
+//  Audit Dashboard Creation In Progress Blur
+//================================================================
+
+.audit-creation {
+  position: relative;
+
+  .creation-inprogress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: var(--andromedaDropdownPanel);
+    text-align: center;
+
+    .progress-status {
+      position: relative;
+      top: 40%;
+
+      img {
+        max-width: 44px;
+        margin: 0px auto;
+        animation-name: spin;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        @keyframes spin {
+          from {
+            transform: rotate(0deg);
+          }
+
+          to {
+            transform: rotate(360deg);
+          }
+        }
+      }
+
+      div.label {
+        color: var(--andromedaBlackText);
+        padding-top: 15px;
+      }
+    }
+  }
+}
+
+//================================================================
+//  Control Management page Card design (Harizontal Card design)
+//================================================================
+
+.card-details {
+  padding-top: 10px;
+
+  .mapped-evidence,
+  .intagrations {
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    li {
+      padding: 45px 15px 25px 15px;
+      background: var(--andromedaBlack);
+      width: 33.3%;
+      float: left;
+      text-align: center;
+      min-height: 160px;
+      margin: 5px 5px 0 0;
+      border-radius: 8px;
+      position: relative;
+
+      &:hover {
+        background-color: var(--andromedaDarkState);
+      }
+
+      div {
+        font-size: 24px;
+      }
+
+      span.status {
+        position: absolute;
+        bottom: 10px;
+        min-width: 100%;
+        left: 0;
+      }
+
+      &.not-mapped,
+      &.failed {
+        color: var(--grpRed);
+      }
+    }
+
+    .mapped {
+      color: var(--grpGreen);
+    }
+  }
+}
+
+//================================================================
+//  Custom Checkbox
+//================================================================
+.andromeda-custom-checkbox {
+  .ui-chkbox {
+    .ui-chkbox-box {
+      width: 14px;
+      height: 14px;
+      background: var(--andromedaGrayForm) !important;
+      border: 1px solid var(--andromedaBlack) !important;
+      border-color: var(--andromedaBlack) !important;
+      &.ui-state-disabled.ui-state-active {
+        background: var(--andromedaLightState) !important;
+        border: 1px solid var(--andromedaLightState) !important;
+        border-color: var(--andromedaLightState) !important;
+      }
+
+      &.ui-state-active {
+        background: var(--andromedaBlueCTA) !important;
+        border: 1px solid var(--andromedaBlueCTA) !important;
+        border-color: var(--andromedaBlueCTA) !important;
+      }
+    }
+
+    .ui-chkbox-icon.ui-clickable.pi {
+      font-size: 10px !important;
+      color: var(--lightWhite) !important;
+    }
+  }
+
+  label.ui-chkbox-label {
+    // color: var(--disabled) !important;
+    font-weight: normal;
+  }
+}
+
+.andromeda-custom-calendar {
+  .ui-datepicker-prev,
+  .ui-datepicker-next {
+    span.pi {
+      color: var(--lightGrayStyleone) !important;
+    }
+  }
+  .ui-state-default.ui-state-disabled {
+    color: var(--andromedaLightState) !important;
+  }
+}
+
+//================================================================
+//  Custom padding
+//================================================================
+
+.custom-padding {
+  .andromeda-card {
+    margin-top: 0;
+  }
+  .grid-12 {
+    padding: 7.5px 7px 7.5px 7px !important;
+  }
+  .grid-6,
+  .grid-4 {
+    &:nth-child(odd) {
+      padding: 7.5px 7.5px 7.5px 0.5em !important;
+    }
+    &:nth-child(even) {
+      padding: 7.5px 0.5em 7.5px 7.5px !important;
+    }
+  }
+}

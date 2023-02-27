@@ -1,0 +1,36 @@
+body .ui-dialog .ui-dialog-content,
+.edit_popup_style .ui-dialog .ui-dialog-content,
+.reg_popup_style .ui-dialog .ui-dialog-content {
+    background-color: var(--androDialogBg);
+}
+
+//Custom Backdrop common Style	
+.ai3-custom-backdrop {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    background-color:var(--backdropBg);
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+  }
+
+.ai3-custom-backdrop2 {
+    z-index: 10 !important;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    background-color: var(--bgOverlay);
+    top: 0px;
+    left: 0px;
+}
+
+.ai3-custom-backdrop3 {
+    z-index: 10 !important;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    background-color: var(--bgOverlay);
+    top: 0px;
+    left: 0px;
+}

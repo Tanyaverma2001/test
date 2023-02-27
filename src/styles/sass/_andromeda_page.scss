@@ -1,0 +1,348 @@
+// Updated design received from pete
+.andromeda-page-main-container {
+    padding: 10px;
+    width: 100%;
+    min-height: calc(100vh - 117px);
+    .header {
+        .header-breadcrumb {
+            font-weight: 600;
+            font-size: 14px;
+            user-select: none;
+            color: var(--lightGrayStyletwo);
+            word-break: break-word;
+            white-space: normal;
+            cursor: pointer;
+        }
+        .header-main-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--defaultColor);
+        }
+    }
+    .andromeda-card {
+        padding: 15px;
+        margin-top: 5px;
+        border-radius: 8px;
+        background: var(--andromedaPageBg);
+        .card-title {
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            span.more-options {
+                float: right;
+                i {
+                    font-size: 20px !important;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+            }
+        }
+        .sub-title {
+            font-size: 14px;
+            width: 100%;
+            text-align: left;
+            // font-weight: bold;
+        }
+        .summary-details {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            li {
+                list-style: none;
+                list-style-type: none;
+                font-size: 14px;
+                padding: 10px;
+                min-width: 120px;
+                background-color: var(--andromedaBlack);
+                margin-right: 10px;
+                border-radius: 8px;
+                min-height: 40px;
+                span {
+                    float: right;
+                }
+                &.overdue, &.failed {
+                    color: var(--grpRed);
+                }
+                &.haserror {
+                    color: var(--grpOrange);
+                }
+            }
+        }
+        .inline-filter-form {
+            display: inline-flex;
+            .result-count {
+                padding: 8px;
+            }
+            .custom-display-flex {
+                display: flex;
+            }
+        }
+        .chart-with-value {
+            display: inline-flex;
+            width: 100%;
+            .custom-p-chart {
+                // width: 40%;
+                position: relative;
+                max-width: 128px;
+                min-width: 128px;
+                max-height: 128px;
+                min-height: 128px;
+                .custom-chart-center {
+                    position: absolute;
+                    left: 45%;
+                    top: 42%;
+                    font-size: 24px;
+                }
+            }
+            .chart-value {
+                width:calc(100% - 140px);
+                
+                ul {
+                    margin-top: 22px;
+                    @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+                        padding-left: 10px;
+                      }
+                      @media only screen and (min-width: 640px) and (max-width: 750px) {
+                        padding-left: 10px;
+                      }
+                    li {
+                        list-style: none;
+                        border-radius: 4px;
+                        height: 50px;
+                        padding: 15px;
+                        background: var(--andromedaBlack);
+                        margin-bottom: 5px;
+                        span.text-right{
+                            float: right;
+                        }
+                        span.in-progress {
+                            color: var(--andromedaState);
+                            padding-right: 10px;
+                        }
+                        span.expried {
+                            color: var(--error);
+                            padding-right: 10px;
+                        }
+                        &:hover {
+                            background-color: var(--andromedaDarkState) ;
+                        }
+                    }
+                }
+            }
+        }
+        &.light-bg {
+            background-color: var(--andromedaBlack) !important;  
+        }
+    }
+}
+
+.custom-tab-view {
+    .ui-tabview-nav {
+        li {
+            background-color: transparent !important;
+            border-bottom: 3px solid !important;
+            border-top: none !important;
+            border-left: none !important;
+            border-right: none !important;
+            border-color: transparent !important;
+            margin-right: 20px !important;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.ui-state-active {
+                background-color: transparent !important;
+                border-bottom: 3px solid !important;
+                border-color: var(--andromedaBlueCTA) !important;
+            }
+            a {
+                color: var(--andromedaWhiteText) !important;
+                font-size: 16px;
+                font-weight: bold !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+               
+            }
+        }
+    }
+    .ui-tabview-panels {
+        background-color: transparent !important;
+        border: none !important;
+        padding: 15px 0 0 0 !important;
+        color: inherit !important;
+    }
+}
+
+// Updated design received from pete
+
+.andromeda-main-container {
+    width: 100%;
+    padding: 20px;
+    min-height: calc(100vh - 117px);
+    .andromeda-container {
+        padding: 30px;
+        border-radius: 10px;
+        background: var(--lightsectionBg);
+    }
+    // Breadcrumb With Title and Right align button style
+    .andromeda-breadcrumb {
+        &.header {
+            margin-bottom: 20px;
+            .p-col-6,
+            .p-col-12 {
+                padding: 0;
+            }
+            div {
+                .br-link {
+                    font-weight: 600;
+                    font-size: 14px;
+                    user-select: none;
+                    color: var(--lightGrayStyletwo);
+                    word-break: break-word;
+                    white-space: normal;
+                }
+                .br-divider {
+                    margin: 10px;
+                    color: var(--lightGray);
+                }
+            }
+
+            .br-title {
+                font-size: 18px;
+                font-weight: bold;
+                padding-top: 5px;
+                color: var(--defaultColor);
+                width: fit-content;
+                float: left;
+            }
+            .action-btn {
+                float: right;
+                button {
+                    margin-left: 10px;
+                }
+            }
+            .bundle-note {
+                float: right;
+                padding-top: 3px;
+            }
+        }
+    }
+    // Breadcrumb With Title and Right align button style end
+
+    //Quich Search
+    .andromeda-quick-search {
+        display: flex;
+        padding: 0;
+        .an-search-input {
+            position: relative;
+            width: 100%;
+            min-width: 500px;
+            max-width: 600px;
+            input {
+                width: 100%;
+                padding: 6px;
+                border-radius: 4px;
+                font-size: 14px;
+                background: var(--androInputBg);
+                color: var(--androInput);
+                border: 1px solid;
+                border-color: var(--androInputBorder);
+            }
+            .clear-search {
+                position: absolute;
+                top: 8px;
+                right: 10px;
+                font-size: 16px;
+                color: var(--borderColor);
+                cursor: pointer;
+            }
+        }
+        .action-btn {
+            button {
+                margin-left: 10px;
+            }
+        }
+    }
+    //Quich Search end
+
+    //table
+    .andromeda-list-table {
+        .table-header {
+            position: -webkit-sticky;
+            position: sticky;
+            margin: 0;
+            top: 0;
+            border-bottom: 2px solid;
+            border-color: var(--borderColor);
+            padding: 8px;
+            li {
+                position: relative;
+                display: inline-block;
+                font-weight: 500;
+                text-align: left;
+                padding-right: 10px;
+                color: var(--androGray);
+                i {
+                    cursor: pointer;
+                    &.pi-sort {
+                        color: var(--androGrayStyleOne);
+                    }
+                    &.pi-caret-down,
+                    &.pi-caret-up {
+                        color: var(--androLight);
+                    }
+                }
+                &.w-5 {
+                    width: 5%;
+                }
+                &.w-6 {
+                    width: 6%;
+                }
+                &.w-7 {
+                    width: 7%;
+                }
+                &.w-8 {
+                    width: 8%;
+                }
+                &.w-8 {
+                    width: 8%;
+                }
+                &.w-10 {
+                    width: 10%;
+                }
+                &.w-11 {
+                    width: 11%;
+                }
+                &.w-12 {
+                    width: 12%;
+                }
+                &.w-12 {
+                    width: 12%;
+                }
+                &.w-14 {
+                    width: 14%;
+                }
+                &.w-15 {
+                    width: 15%;
+                }
+                &.w-16 {
+                    width: 16%;
+                }
+                &.w-17 {
+                    width: 17%;
+                }
+                &.w-18 {
+                    width: 18%;
+                }
+                &.w-19 {
+                    width: 19%;
+                }
+                &.w-20 {
+                    width: 20%;
+                }
+                &.w-21 {
+                    width: 21%;
+                }
+            }
+        }
+    }
+}

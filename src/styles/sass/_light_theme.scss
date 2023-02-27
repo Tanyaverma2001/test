@@ -1,0 +1,156 @@
+.light-theme {
+
+   /*Tables Custom updated colors*/
+   --androLight: #000000;
+   --androGray: #4d4d4d;
+   --androGrayStyleOne: #cccccc;
+   --androDarkHover: #d4e1e6;
+   --androThirdPartyBg: #f7f7f7;
+   --androToggleSwitch: #39b54a;
+   --androToggleSwitchBg: #d2d2d2;
+
+   /* Input custom Styles*/
+   --androInputBg: #ffffff;
+   --androInput: #000000;
+   --androInputBorder: #cccccc;
+   --androInputHover: #d4e1e6;
+   --androInputPlaceholder: #141e28;
+
+   /*Custom CHeckbox*/
+   --androCheckboxActive: #39b54a;
+   --androCheckboxBorder: #b3b3b3;
+   --androCheckboxBg: #ffffff;
+
+   /*Audit Report Styles */
+   --androAuditReportBg: #efefef;
+   --androAuditCompleted: #5c9f32;
+   --androAuditVerifyed: #F47921;
+   --androAuditApproved: #2C6707;
+   --androAuditDApproved: #cc01ff;
+   --androAuditControls: #4d4dff;
+
+
+   --androLabel: #767676;
+   --androValue: #000;
+   --border: #dce2e3;
+   --box-shadow-1: 0px 0px 20px 0px rgb(220 220 220);
+
+   /*Expansion Panel*/
+   --androExpansionBgMain: #f7f7f7;
+   --androExpansionBgSecondary: #ffffff;
+
+   /*Dialog BG*/
+   --androDialogBg: #f7f7f7;
+   --androDialogBgSearch: #f7f7f7;
+
+   /*Date picker disable color*/
+   --androDatePicker: rgb(0 0 0 / 40%);
+
+   /*SVG Image colors*/
+   --androIconDark: brightness(0) invert(1);
+   --androIconWhite: grayscale(100%);
+
+   /*Reports Overlay Panel colors*/
+   --androOverlayPanel: #f7f7f7;
+
+   /*Progress Bar Empty colors*/
+   --androChartempty: #E8EDED;
+
+   /*Custom old colors*/
+   --lightBg: #dce2e3;
+   --lightBgone: #919191;
+   --lightColor: #000000;
+   /*--settingsBg: #d5d5d5;*/
+   --lightsectionBg: #ffffff;
+   --lightTableBg: #ffffff;
+   --lightTableBorder: #202020;
+   --lightTableHeaderColor: #000000;
+   --lightTableEvenRecord: #f7f7f7;
+   --lightBlack: #dce2e3;
+   --lightGray: #424242;
+   --defaultColor: #000000;
+   --navbarBg: #0c1218;
+   --navMenuHover: #ffffff;
+   --dropdownarrow: #806e6e;
+   --dropdownBg: #e8eded;
+   --deopdownBorder: #ffffff;
+   --calenderBg: #0c1218;
+   --calenderColor: #ffffff;
+   --lightGrayStyletwo: #4d4d4d;
+   --lightGrayStyleThree: #0c1218;
+   --calenderDaySelectedBg: #999;
+   --shortIcon: rgb(0 0 0 / 40%);
+   --btnLightBg: #33333352;
+   --sfilterBg: #ffffff;
+   --ai3Query: #767676;
+   --ai3QueryActive: #a1a1a1;
+   --autoCompleteBg: #ccc;
+   --autoCompleteBg1: #919191;
+   --tabPanelBorder: #1f3c4a;
+   --backdropBg: rgba(29, 39, 49, 0.78);
+   --tooltipHelptextBg: #141e28;
+   --sidebarBorder: #ccc;
+   --scrollpanelRightBorder: #ccc;
+   --tagSelector: #ffffff;
+   --tagSelectorBorder: #ffffff;
+   --eventLogEvenData: #e5e5e5;
+   --eventLogOddData: #ffffff;
+   --ktableborder: #c8c8c8;
+   --uiDropdownStateBorder: #1b2124;
+   --lightDarkOne: #cccccc;
+   --lightYellow: #b9b900;
+   --secondExpansionBg: #efefef;
+   --lightMenu: #ffffff99;
+   /* Menu Color */
+   --bgOverlay: rgba(38, 47, 57, 0.84);
+   --chartJsTooltip: rgb(0 0 0 / 68%);
+
+   /*--lightBlackandWhite: #ffffff;
+    --lightGrayandWhite: #ffffff;*/
+
+   /* ip-subnet-input */
+   --dialogBg: #ffffff;
+
+   /* ip-subnet-input */
+   --ipSubnetColor: #000000;
+   --ipSubnetBg: #ffffff;
+   --ipSubnetBorder: #b3b3b3;
+
+
+   /* Updated color code received from PETE */
+   --andromedaHoverState: #E1E9F2;
+
+   --andromedaPageBg: #ffffff;
+   --andromedaTableBg: #536980;
+   --andromedaSort: #FFFFFF;
+   --andromedaBlack: #F5F8FA;
+   --andromedaDarkState: #E5EBEF;
+   --andromedaGrayForm: #EDEFF2;
+   --andromedaClickableBlack: #1F2C39;
+   --andromedaState: #536980;
+   --andromedaWhiteText: #141E28;
+   --andromedaBlackText: #ffffff;
+   --andromedaTags: #E0E3E8;
+
+   --andromedaDropdownPanel: #1F2C39;
+   --andromedaDropdownHover: #536980;
+   --andromedaStatusBg : #d2dce6;
+   /* Updated color code received from PETE */
+
+   /* Reversed Theme */
+   --andromedaPageBgReversed: #000000;
+   --andromedaGrayFormReversed: #384552;
+   --andromedaWhiteTextReversed: #FFFFFF;
+
+   --andromedaHoverStateReversed: #1F2C39;
+   --andromedaTableBReversedg: #76879A;
+   --andromedaSortReversed: #8595A5;
+   --andromedaBlackReversed: #141E28;
+   --andromedaDarkStateReversed: #1F2C39;
+   --andromedaClickableBlackReversed: #141E28;
+   --andromedaStateReversed: #536980;
+   --andromedaBlackTextReversed: #000000;
+   --andromedaTagsReversed: #304052;
+   --andromedaDropdownPanelReversed: #ffffff;
+   --andromedaDropdownHoverReversed: #E1E9F2;
+}
